@@ -1,6 +1,7 @@
 from django.contrib import admin
-from MVPs.models import Topic, Entry, Alunos 
+from MVPs.models import Alunos,  Professores, Projetos
 
-admin.site.register(Topic)
-admin.site.register(Entry)
+
 admin.site.register(Alunos)
+admin.site.register(Professores)
+admin.site.register(Projetos)

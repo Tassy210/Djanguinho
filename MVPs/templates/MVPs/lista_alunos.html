@@ -1,44 +1,14 @@
 <!-- MVPs/templates/MVPs/lista_alunos.html -->
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/output.css' %}" rel="stylesheet">
     <title>Lista de Alunos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            background: #f9f9f9;
-            margin: 5px 0;
-            padding: 10px;
-            border-left: 5px solid #4CAF50;
-        }
-    </style>
+
 </head>
 <body>
     <header>
@@ -53,6 +23,7 @@
                 <li>Nenhum aluno cadastrado.</li>
             {% endfor %}
         </ul>
+        <a href="{% url 'lista_projetos' %}">Ver Lista de Projetos</a>
     </div>
 </body>
 </html>
